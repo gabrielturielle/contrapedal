@@ -50,6 +50,8 @@ font-family: 'Roboto', sans-serif;
   .header__list{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  background:transparent;
+  font-size:1rem;
   }
 
 
@@ -91,6 +93,10 @@ font-family: 'Roboto', sans-serif;
     color:blueviolet;
     font-size: 4rem;
     font-weight: 200;
+}
+
+.home__seccion2{
+  display: flex;
 }
 
 .home__seccion2__contenedor{
@@ -192,7 +198,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 .artistas{
-  background-color:blueviolet;
+  
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,14,157,1) 35%, rgba(0,212,255,1) 100%);
   color:#fff;
   display: flex;
   flex-direction: column;
@@ -471,18 +479,28 @@ a{
   font-weight: 200;
 }
 
+.servicios__seccion2{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
 .servicios__seccion2__contenedor{
   display: flex;
-  flex-direction: column;
+ /* flex-direction: column;*/
   gap:10px;
   padding: 20px;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  /*flex-wrap: wrap;*/
   width: 100%;
-  left: 5rem;
+  margin-left: 5rem;
   align-self: center;
-  margin-left:9.5rem;
+
 }
+
+
+
 .servicios__seccion2__imagen{
   transition: all 1s;
 }
@@ -497,5 +515,17 @@ a{
 }
 
 @media screen and (max-width: 768px) {
+
+  .header__list{
+    flex-direction: row;
+  }
+  
+   .servicios__seccion2__contenedor1{
+ 
+  flex-direction: column; 
+   }
+   .header__list li { /* ITEMS DEL NAV */
+    display: block;
+   }
 
 }
