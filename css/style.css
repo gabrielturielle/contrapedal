@@ -11,6 +11,11 @@
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald&family=Roboto:wght@100;300;500&display=swap');
 
   
+  #navLinks { 
+    justify-content: flex-end;
+}
+
+
   h1{
     color:blueviolet;
     font-family: 'Oswald', sans-serif;
@@ -28,6 +33,9 @@ p{
 font-family: 'Roboto', sans-serif;
 }
 
+.navbar ul {
+  justify-content: space-between;
+}
   header { /* Contenedor general del navbar */
     
     background-color: white;
