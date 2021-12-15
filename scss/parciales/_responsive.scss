@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .header__list{
+    flex-direction: row;
+  }
+  
+  .festivales__seccion1__titulo{
+    font-size: 2.5rem;
+  }
+  .artistas__seccion1__titulo{
+    font-size: 2.5rem;
+  }
+
+  .servicios__seccion1__titulo{
+    font-size: 2.5rem;
+  }
+
+  .servicios__seccion1__contenedor{
+    width: 300px;
+    position:relative;
+    left:30px;
+  }
+
+   .header__list li { /* ITEMS DEL NAV */
+    display: block;
+   }
+
+   .servicios__seccion2__contenedor {
+      display: flex;
+      flex-direction: column;
+      margin:0;
+      padding:0;
+      margin-top: 10px;
+      margin: 50px;
+  }
+
+  .servicios__seccion2__imagen{
+    width:400px;
+    height:auto;
+  }
+
+  .contacto__seccion1__titulo{
+  
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .festivales__seccion1__titulo{
+    font-size: 2rem;
+  }
+  .artistas__seccion1__titulo{
+    font-size: 2rem;
+  }
+  .servicios__seccion1__titulo{
+    font-size: 2rem;
+  }
+  .servicios__seccion2__imagen{
+    width:320px;
+    height:auto;
+  }
+
+  .servicios__seccion2__contenedor {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding:0;
+    margin-top: 10px;
+  }
+  .contacto{
+    width: auto; 
+    &__form {
+      width: auto;
+    
+    }
+  }
+}
+

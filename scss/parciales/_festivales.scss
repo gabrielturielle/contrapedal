@@ -1,0 +1,83 @@
+
+.festivales__seccion1{
+    height: 90vh;
+    background-image: url("../assets/festival.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+
+    &__seccion1__contenedor{
+        width: 400px;
+        position:relative;
+        left:30px;
+      }
+
+      &__seccion1__titulo{
+        font-family: 'Oswald', sans-serif;
+        color:black;
+        font-size: 4rem;
+        font-weight: 200;
+      }
+      &__seccion2__contenedor{
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+        margin-top: 2rem;
+        padding:20px;
+        width:100%;
+        justify-content: left;
+      }
+
+      &__festMontevideo__contenedor{
+        /*align-items: center;*/
+        padding:20px;
+        background: rgb(30, 171, 218);
+        margin: 10px;
+        border-radius: 10px;
+      }
+
+      &__festMontevideo__texto{
+        width:400px;
+        padding:20px;
+      }
+
+      &__festSP__contenedor{
+        /*align-items: center;*/
+        padding:20px;
+        background: rgb(30, 171, 218);
+        margin: 10px;
+        border-radius: 10px;
+      
+      }
+
+      
+    &__festSP__texto{
+        width:400px;
+    }
+  
+    &__diasNordicos__contenedor{
+    /* align-items: center;*/
+        padding:20px;
+        background: rgb(30, 171, 218);
+        margin: 10px;
+        border-radius: 10px;
+    }
+  
+    &__diasNordicos__texto{
+        width:400px;
+    }
+    
+    &__eduRioNegro__contenedor{
+        /* align-items: center;*/
+        padding:20px;
+        background: rgb(30, 171, 218);
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+  }
+  
+  
+  

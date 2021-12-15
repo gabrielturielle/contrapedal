@@ -1,0 +1,38 @@
+@import "./vars";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald&family=Roboto:wght@100;300;500&display=swap');
+
+
+
+  h1{
+    color: $color-principal;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: white;
+}
+
+p{
+font-family: 'Roboto', sans-serif;
+}
+
+
+ img{ /* imagen/logo */
+    width: auto;
+}
+
+.barra2{
+  background-color: $color-principal;
+  height:10px !important;
+  
+}
+
+a{
+  text-decoration: none;
+}
+

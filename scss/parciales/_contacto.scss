@@ -1,0 +1,73 @@
+@import "./vars";
+
+.contacto__seccion1{
+    height: 90vh;
+    background-image: url("../assets/nomade.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+
+    &__seccion1__titulo{
+        font-family: 'Oswald', sans-serif;
+        color: $color-principal;
+        font-size: 4rem;
+        font-weight: 200;
+      }
+      &__contenedor{
+        margin-top: 280px;
+        padding: 0.5rem;
+        overflow: hidden;
+      }
+      
+  }
+  
+ 
+  .contacto{
+    background-color: gray;
+    width:400px;
+    position:relative;
+    margin-top:700;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    box-shadow: 7px 13px 37px rgba(0,0,0,.8);
+    
+  }
+  
+  .contacto__form label, .contacto__form input, .contacto__form textarea {
+    display:block;
+    width: 100%;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+   .contacto__form input, :not([type='submit']) .contacto__form textarea {
+    border:none;
+    border-bottom: 2px solid blueviolet;
+    height: 35px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    outline:none;
+    color:gray;
+    background-color: lightgray;
+  }
+  
+  .contacto__form textarea{
+     min-height: 100px;
+  }
+  
+  .contacto__form label {
+    font-weight: 700;
+  }
+  
+  input[type='submit']{
+    padding:10px;
+    border:none;
+    background-color: blueviolet;
+    color:white;
+    font-size: 20px;
+    cursor:pointer;
+  }
+  

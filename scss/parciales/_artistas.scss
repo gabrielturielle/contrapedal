@@ -1,0 +1,94 @@
+@import "./vars";
+
+.artistas__seccion1{
+    height: 90vh;
+    background-image: url("../assets/baleia.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: center;
+
+    &__contenedor{
+        width: 400px;
+        position:relative;
+        left:30px;
+      }
+
+      &__titulo{
+        font-family: 'Oswald', sans-serif;
+        color:$color-principal;
+        font-size: 4rem;
+        font-weight: 200;
+      }    
+  }
+  
+  
+  .artistas{
+    
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,14,157,1) 35%, rgba(0,212,255,1) 100%);
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+
+    &__contenedor{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      
+      &__artista{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.8;
+      
+      }
+      
+      &__img{
+        width: 100%;
+        /*border-radius: 50%;*/
+        max-width: 600px;
+        height: 400px;
+        object-fit: cover;
+        margin: auto;
+      }
+      
+        &__video--avarocha{
+        align-self: center;
+        padding:20px;
+      }
+      
+      &__video--mula{
+        align-self: center;
+        padding:20px;
+      }
+      
+      &__video--dak{
+        align-self: center;
+        padding:20px;
+      }
+      
+      &__video--alfonsina{
+        align-self: center;
+        padding:20px;
+      }
+      
+      &__titulo{
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+      }
+      
+      &__parrafo{
+        padding:20px;
+      }
+      
+  
+  }
+  
+  

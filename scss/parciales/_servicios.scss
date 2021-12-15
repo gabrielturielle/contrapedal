@@ -1,0 +1,90 @@
+
+.bodyServicios{
+    display: grid; 
+    grid-template-rows: auto 1fr auto;
+    height: 100vh; 
+    grid-template-areas: "headerServicios" "mainServicios" "footerServicios"
+    
+  }
+  
+  .headerServicios{
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    grid-area: headerServicios; 
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .mainServicios{
+    display: flex; 
+   /* grid-template-columns: repeat(3, 1fr); */
+    /*grid-gap: 2rem;
+    place-items: center; 
+    padding: 60px 1rem; */
+    grid-area: mainServicios;
+  }
+  
+  .footerServicios{
+   background-color: lightblue; 
+    grid-area: footerServicios; 
+  }
+  
+
+  .servicios__seccion1{
+    height: 90vh;
+    background-image: url("../assets/jaloo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:inline-block;
+    align-items: center;
+    width: 100%;
+
+    &__contenedor{
+        width: 550px;
+        position:relative;
+        left:30px;
+      }
+
+      &__titulo{
+        font-family: 'Oswald', sans-serif;
+        color:rgb(97, 93, 93);
+        font-size: 4rem;
+        font-weight: 200;
+      }
+  }
+  
+  
+  .servicios__seccion2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__contenedor{
+        display: flex;
+       /* flex-direction: column;*/
+        gap:10px;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+        /*flex-wrap: wrap;*/
+        width: 100%;
+        margin-left: 1rem;
+        align-self: center;
+      
+      }
+
+      &__imagen{
+        transition: all 1s;
+      }
+      &__imagen:hover{
+        transform: scale(1.05, 1.05)
+      }
+  
+  }
+  
+  
+  
+  
+  
+ 
