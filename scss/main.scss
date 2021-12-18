@@ -1,4 +1,5 @@
 @import "./parciales/reset";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald&family=Roboto:wght@100;300;500&display=swap');
 @import "./parciales/vars";
 @import "./parciales/generales";
 @import "./parciales/home";
@@ -10,3 +11,5 @@
 @import "./parciales/servicios";
 @import "./parciales/animaciones";
 @import "./parciales/responsive";
+@import "./parciales/mixin";
+@import "./parciales/mapa";

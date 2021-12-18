@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald&family=Roboto:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oswald&family=Roboto:wght@100;300;500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -121,8 +122,8 @@ a {
 }
 
 .home__seccion3 {
-  height: 90vh;
   background-image: url("../assets/hkbo.png");
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,7 +148,7 @@ a {
   color: white;
 }
 
-.footer__texto {
+.footer__parrafo {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   text-align: right;
@@ -155,8 +156,8 @@ a {
 }
 
 .artistas__seccion1 {
-  height: 90vh;
   background-image: url("../assets/baleia.png");
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -296,9 +297,16 @@ a {
   color: #fff;
 }
 
+.pantalla__festivales, .festivales__seccion1__festMontevideo__contenedor, .festivales__seccion1__festSP__contenedor, .festivales__seccion1__diasNordicos__contenedor, .festivales__seccion1__eduRioNegro__contenedor {
+  padding: 20px;
+  background: #1eabda;
+  margin: 10px;
+  border-radius: 10px;
+}
+
 .festivales__seccion1 {
-  height: 90vh;
   background-image: url("../assets/festival.png");
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,7 +339,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*align-items: center;*/
   margin-top: 2rem;
   padding: 20px;
   width: 100%;
@@ -340,54 +347,22 @@ a {
           justify-content: left;
 }
 
-.festivales__seccion1__festMontevideo__contenedor {
-  /*align-items: center;*/
-  padding: 20px;
-  background: #1eabda;
-  margin: 10px;
-  border-radius: 10px;
-}
-
 .festivales__seccion1__festMontevideo__texto {
   width: 400px;
   padding: 20px;
-}
-
-.festivales__seccion1__festSP__contenedor {
-  /*align-items: center;*/
-  padding: 20px;
-  background: #1eabda;
-  margin: 10px;
-  border-radius: 10px;
 }
 
 .festivales__seccion1__festSP__texto {
   width: 400px;
 }
 
-.festivales__seccion1__diasNordicos__contenedor {
-  /* align-items: center;*/
-  padding: 20px;
-  background: #1eabda;
-  margin: 10px;
-  border-radius: 10px;
-}
-
 .festivales__seccion1__diasNordicos__texto {
   width: 400px;
 }
 
-.festivales__seccion1__eduRioNegro__contenedor {
-  /* align-items: center;*/
-  padding: 20px;
-  background: #1eabda;
-  margin: 10px;
-  border-radius: 10px;
-}
-
 .contacto__seccion1 {
-  height: 90vh;
   background-image: url("../assets/nomade.png");
+  height: 90vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

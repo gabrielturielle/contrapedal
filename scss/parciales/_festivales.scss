@@ -1,12 +1,23 @@
+@import "./mapa";
+
+.pantalla__festivales{
+    padding:20px;
+    background: rgb(30, 171, 218);
+    margin: 10px;
+    border-radius: 10px;
+}
+
 
 .festivales__seccion1{
-    height: 90vh;
+   
     background-image: url("../assets/festival.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display:flex;
-    align-items: center;
+    height: map-get($estilos-portada,alto);
+    background-position: map-get($estilos-portada,posicion-back);
+    background-size: map-get($estilos-portada,tamanio-back);
+    background-repeat: map-get($estilos-portada,back-repetir);
+    display:map-get($estilos-portada,despliegue);
+    align-items: map-get($estilos-portada,alineacion);
+
 
     &__seccion1__contenedor{
         width: 400px;
@@ -23,7 +34,6 @@
       &__seccion2__contenedor{
         display: flex;
         flex-direction: column;
-        /*align-items: center;*/
         margin-top: 2rem;
         padding:20px;
         width:100%;
@@ -31,11 +41,9 @@
       }
 
       &__festMontevideo__contenedor{
-        /*align-items: center;*/
-        padding:20px;
-        background: rgb(30, 171, 218);
-        margin: 10px;
-        border-radius: 10px;
+        
+        @extend .pantalla__festivales;
+        
       }
 
       &__festMontevideo__texto{
@@ -44,11 +52,9 @@
       }
 
       &__festSP__contenedor{
-        /*align-items: center;*/
-        padding:20px;
-        background: rgb(30, 171, 218);
-        margin: 10px;
-        border-radius: 10px;
+       
+        @extend .pantalla__festivales;
+       
       
       }
 
@@ -58,11 +64,9 @@
     }
   
     &__diasNordicos__contenedor{
-    /* align-items: center;*/
-        padding:20px;
-        background: rgb(30, 171, 218);
-        margin: 10px;
-        border-radius: 10px;
+    
+      @extend .pantalla__festivales;
+       
     }
   
     &__diasNordicos__texto{
@@ -70,11 +74,9 @@
     }
     
     &__eduRioNegro__contenedor{
-        /* align-items: center;*/
-        padding:20px;
-        background: rgb(30, 171, 218);
-        margin: 10px;
-        border-radius: 10px;
+       
+      @extend .pantalla__festivales;
+       
     }
 
   }

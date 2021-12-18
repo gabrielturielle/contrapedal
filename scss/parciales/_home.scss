@@ -1,4 +1,5 @@
 @import "./vars";
+@import "./mapa";
 
 .home__seccion1{
     height: 90vh;
@@ -81,13 +82,15 @@
 
 
 .home__seccion3{
-  height: 90vh;
+  
   background-image: url("../assets/hkbo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display:flex;
-  align-items: center;
+  height: map-get($estilos-portada,alto);
+  background-position: map-get($estilos-portada,posicion-back);
+  background-size: map-get($estilos-portada,tamanio-back);
+  background-repeat: map-get($estilos-portada,back-repetir);
+  display:map-get($estilos-portada,despliegue);
+  align-items: map-get($estilos-portada,alineacion);
+
 
   &__contenedor{
     width: 550px;

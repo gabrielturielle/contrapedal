@@ -1,13 +1,22 @@
 @import "./vars";
+@import "./mixin";
+@import "./mapa";
+
+
+
 
 .artistas__seccion1{
-    height: 90vh;
     background-image: url("../assets/baleia.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display:flex;
-    align-items: center;
+
+    height: map-get($estilos-portada,alto);
+    background-position: map-get($estilos-portada,posicion-back);
+    background-size: map-get($estilos-portada,tamanio-back);
+    background-repeat: map-get($estilos-portada,back-repetir);
+    display:map-get($estilos-portada,despliegue);
+    align-items: map-get($estilos-portada,alineacion);
+
+   
+
 
     &__contenedor{
         width: 400px;
@@ -26,9 +35,8 @@
   
   .artistas{
     
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,14,157,1) 35%, rgba(0,212,255,1) 100%);
-    color:#fff;
+    @include fondo-de-pantalla;
+
     display: flex;
     flex-direction: column;
     padding: 60px 40px;

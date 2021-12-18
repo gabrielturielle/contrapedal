@@ -1,13 +1,18 @@
 @import "./vars";
+@import "./mapa";
+
 
 .contacto__seccion1{
-    height: 90vh;
+   
     background-image: url("../assets/nomade.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display:flex;
-    align-items: center;
+
+    height: map-get($estilos-portada,alto);
+    background-position: map-get($estilos-portada,posicion-back);
+    background-size: map-get($estilos-portada,tamanio-back);
+    background-repeat: map-get($estilos-portada,back-repetir);
+    display:map-get($estilos-portada,despliegue);
+    align-items: map-get($estilos-portada,alineacion);
+
 
     &__seccion1__titulo{
         font-family: 'Oswald', sans-serif;
