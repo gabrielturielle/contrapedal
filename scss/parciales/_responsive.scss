@@ -8,6 +8,18 @@
     flex-direction: row;
   }
   
+  .home__seccion2__contenedor{
+    margin:0px;
+    width:auto;
+       &__videoMain{
+        width: auto;
+        height: auto;
+       }
+       &__texto{
+         width:auto;
+         margin:0px;
+       }
+  }
   .festivales__seccion1__titulo{
     font-size: 2.5rem;
   }
@@ -47,6 +59,11 @@
   
     font-size: 2rem;
   }
+
+  .footer__columna{
+    width: auto;
+    overflow: hidden;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -78,5 +95,12 @@
     
     }
   }
+  .home__seccion2__contenedor{
+    width: auto;
+  }
+  .home__seccion2__videoMain {
+    width: 243px;
+    height: auto;
+}
 }
 
