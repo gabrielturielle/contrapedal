@@ -1,5 +1,6 @@
 @import "./vars";
 @import "./mapa";
+@import "./media-queries";
 
 .home__seccion1{
     height: 90vh;
@@ -44,6 +45,23 @@
     margin:20px;
     width: 900px;
     text-align: justify;
+    @include tablet {
+      margin:0px;
+      width:auto;
+         &__videoMain{
+          width: auto;
+          height: auto;
+         }
+         &__texto{
+           width:auto;
+           margin:0px;
+         }
+    }
+    @include movil {
+    
+        width: auto;
+    }
+
   }
 
   &__contenedor2{
@@ -55,7 +73,11 @@
   
     width:560px;
      height:315px;
-   
+     @include movil {
+    
+      width: 243px;
+      height: auto;
+     }
   }
   
   &__titulo{

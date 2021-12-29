@@ -1,4 +1,5 @@
 @import "./mapa";
+@import "./media-queries";
 
 .pantalla__festivales{
     padding:20px;
@@ -30,6 +31,13 @@
         color:black;
         font-size: 4rem;
         font-weight: 200;
+        @include tablet {
+            font-size: 2.5rem;
+        }
+        @include movil {
+          font-size: 2rem;
+        }
+
       }
       &__seccion2__contenedor{
         display: flex;

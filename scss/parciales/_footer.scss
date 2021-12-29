@@ -1,3 +1,5 @@
+@import "./media-queries";
+
 .footer__parrafo{
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
@@ -10,4 +12,9 @@
   .footer__columna{
     width: auto;
     overflow: hidden;
+
+    @include tablet {
+      width: auto;
+      overflow: hidden;
+    }
   }

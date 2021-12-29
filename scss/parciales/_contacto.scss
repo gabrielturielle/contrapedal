@@ -1,5 +1,6 @@
 @import "./vars";
 @import "./mapa";
+@import "./media-queries";
 
 
 .contacto__seccion1{
@@ -38,6 +39,15 @@
     left:50%;
     transform:translate(-50%,-50%);
     box-shadow: 7px 13px 37px rgba(0,0,0,.8);
+
+    @include movil {
+        width: auto; 
+        }
+      &__form {
+        @include movil {
+          width: auto; 
+          }
+    }
     
   }
   
