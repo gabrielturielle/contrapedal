@@ -65,6 +65,18 @@ a {
   font-weight: 200;
 }
 
+@media screen and (max-width: 768px) {
+  .home__seccion1__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home__seccion1__titulo {
+    font-size: 1.5rem;
+  }
+}
+
 .home__seccion2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +200,13 @@ a {
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__columna {
+    width: auto;
+    overflow: hidden;
+  }
+}
+
 .artistas__seccion1 {
   background-image: url("../assets/baleia.png");
   height: 90vh;
@@ -213,6 +232,18 @@ a {
   color: blueviolet;
   font-size: 4rem;
   font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .artistas__seccion1__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .artistas__seccion1__titulo {
+    font-size: 2rem;
+  }
 }
 
 .artistas {
@@ -302,6 +333,22 @@ a {
   padding: 20px;
 }
 
+.btn-artista {
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 10rem;
+  }
+}
+
 .main__home {
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #790e9d), to(#00d4ff));
@@ -362,6 +409,18 @@ a {
   color: black;
   font-size: 4rem;
   font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .festivales__seccion1__seccion1__titulo {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .festivales__seccion1__seccion1__titulo {
+    font-size: 2rem;
+  }
 }
 
 .festivales__seccion1__seccion2__contenedor {
@@ -545,11 +604,31 @@ input[type='submit'] {
   left: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .servicios__seccion1__contenedor {
+    width: 300px;
+    position: relative;
+    left: 30px;
+  }
+}
+
 .servicios__seccion1__titulo {
   font-family: 'Oswald', sans-serif;
   color: #615d5d;
   font-size: 4rem;
   font-weight: 200;
+}
+
+@media screen and (max-width: 320px) {
+  .servicios__seccion1__titulo {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .servicios__seccion1__titulo {
+    font-size: 2.5rem;
+  }
 }
 
 .servicios__seccion2 {
@@ -614,6 +693,13 @@ input[type='submit'] {
 .servicios__seccion2__imagen {
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .servicios__seccion2__imagen {
+    width: 400px;
+    height: auto;
+  }
 }
 
 .servicios__seccion2__imagen:hover {

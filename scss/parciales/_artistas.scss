@@ -102,8 +102,17 @@
       &__parrafo{
         padding:20px;
       }
-      
-  
   }
   
+  .btn-artista{
+    background-color:$color-principal;
+  }
   
+.card{
+  @include movil {
+    width: 10rem;
+  }
+  @include tablet {
+    width: 10rem;
+  }
+} 
